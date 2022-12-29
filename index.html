@@ -4,14 +4,13 @@
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
       .timer {
         font-family: 'Roboto', sans-serif;
-        font-size: 72px;
+        font-size: 144px;
         color: #333;
-        background-color: transparent;
-      }
-      .counter {
-        font-family: 'Roboto', sans-serif;
-        font-size: 36px;
-        color: #333;
+        background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1), 0 0 50px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 1), 0 0 70px rgba(255, 255, 255, 1);
       }
     </style>
   </head>
@@ -30,7 +29,7 @@
     
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+      var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
       
       // Update the count down every 1 second
       var x = setInterval(function() {

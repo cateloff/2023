@@ -8,11 +8,22 @@
         color: #333;
         background-color: transparent;
       }
+      .counter {
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        color: #333;
+      }
     </style>
   </head>
   <body>
     <div class="timer">
       <p id="countdown"></p>
+    </div>
+    <br>
+    <button onclick="incrementCounter()">Push</button>
+    <br><br>
+    <div class="counter">
+      Total clicks: <span id="clicks"></span>
     </div>
     
     <script>
@@ -44,6 +55,15 @@
           document.getElementById("countdown").innerHTML = "Happy New Year!";
         }
       }, 1000);
+      
+      // Initialize the click counter
+      var clicks = 0;
+      
+      // Function to increment the counter and display the new value
+      function incrementCounter() {
+        clicks++;
+        document.getElementById("clicks").innerHTML = clicks;
+      }
     </script>
   </body>
 </html>

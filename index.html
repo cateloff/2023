@@ -24,10 +24,23 @@
         transition: transform 0.2s;
         justify-content: center;
         white-space: nowrap;
+        display: flex;
         align-items: center;
       }
       .timer:hover {
         transform: translate(-50%, -50%) scale(1.2);
+      }
+      .timer > * {
+        /* Set the display of the child elements to inline-block */
+        display: inline-block;
+        
+        /* Add a transition for the transform property */
+        transition: transform 0.2s;
+      }
+      
+      .timer > *:hover {
+        /* Zoom in the hovered element */
+        transform: scale(1.2);
       }
     </style>
   </head>

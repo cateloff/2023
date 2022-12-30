@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+      .timer {
+        /* Other styles */
+        
+        /* Set the position of the element to absolute */
+        position: absolute;
+        
+        /* Center the element horizontally and vertically */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        /* Set the cursor to the default style */
+        cursor: default;
+        
+        /* Add a transition for the transform property */
+        transition: transform 0.2s;
+      }
+      
+      .timer:hover {
+        /* Zoom in the element when it is hovered */
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer">
+      <p id="countdown"></p>
+    </div>
+
+    <script>
+      // Your countdown code here
+    </script>
+  </body>
+</html>
